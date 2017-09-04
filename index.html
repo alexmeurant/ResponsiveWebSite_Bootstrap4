@@ -264,21 +264,141 @@
 
     <!-- Modal -->
     <div class="modal fade" id="scheduleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Register for Full Stack Conf</h5>
+                <div class="modal-header bg-info text-white">
+                    <h4 class="modal-title" id="exampleModalLabel">Register for Full Stack Conf</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+
                 <div class="modal-body">
-                    ...
+
+                    <!-- alert message -->
+                    <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                        <p><strong>Hurry!</strong> Early bird registration ends in 2 days.</p>
+                    </div>
+                    <!-- /alert message -->
+
+                    <!-- Basic Info section -->
+                    <h5>Basic info</h5>
+                    <form class="mb-4">
+                        <div class="form-group">
+                            <label class="form-control-label" for="name">Name:</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-control-label" for="jobRole">Job Role:</label>
+                            <select class="custom-select d-block w-100" id="jobRole">
+                                <option selected>Full Stack JS Developer</option>
+                                <option value="1">Front End Developer</option>
+                                <option value="2">Designer</option>
+                                <option value="3">Student</option>
+                            </select>
+                        </div>
+                    </form>
+                    <!-- /Basic Info section -->
+
+                    <hr>
+
+                    <!-- Interest section -->
+                    <h5>Which Topics Interest You Most?</h5>
+                    <div class="form-check my-4 c-inputs-stacked">
+                        <label class="custom-control custom-checkbox d-block">
+                            <input class="custom-control-input" type="checkbox" value="">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">Javascript Frameworks</span>
+                        </label>
+                        <label class="custom-control custom-checkbox d-block">
+                            <input class="custom-control-input" type="checkbox" value="">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">Javascript Libraries</span>
+                        </label>
+                        <label class="custom-control custom-checkbox d-block">
+                            <input class="custom-control-input" type="checkbox" value="">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">Node.js</span>
+                        </label>
+                        <label class="custom-control custom-checkbox d-block">
+                            <input class="custom-control-input" type="checkbox" value="">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">Build tools</span>
+                        </label>
+                        <label class="custom-control custom-checkbox d-block">
+                            <input class="custom-control-input" type="checkbox" value="">
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description">ES2015</span>
+                        </label>
+                    </div>
+                    <!-- /Interest section -->
+
+                    <hr>
+
+                    <!-- Payment Info section -->
+                    <h5>Payment Info</h5>
+                    <div class="form-row">
+                        <div class="form-group col-lg-6">
+                            <label class="form-control-label" for="cardNumber">Card Number:</label>
+                            <input type="text" class="form-control" id="cardNumber">
+                        </div>
+                        <div class="form-group col-lg-3">
+                            <label class="form-control-label" for="zip">Zip Code:</label>
+                            <input type="text" class="form-control" id="zip">
+                        </div>
+                        <div class="form-group col-lg-3">
+                            <label class="form-control-label" for="cvv">CVV:</label>
+                            <input type="text" class="form-control" id="cvv">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label class="form-control-label col-lg-12" for="expireDate1">Expiration Date:</label>
+                        <div class="form-group col-lg-8">
+                            <select class="custom-select form-control" id="expireDate1">
+                                  <option value="1">1 - January</option>
+                                  <option value="2">2 - February</option>
+                                  <option value="3">3 - March</option>
+                                  <option value="4">4 - April</option>
+                                  <option value="5">5 - May</option>
+                                  <option value="6">6 - June</option>
+                                  <option value="7">7 - July</option>
+                                  <option value="8">8 - August</option>
+                                  <option value="9">9 - September</option>
+                                  <option value="10">10 - October</option>
+                                  <option value="11">11 - November</option> 
+                                  <option value="12">12 - December</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <select class="custom-select form-control" id="expireDate2">
+                                  <option value="2016">2016</option>
+                                  <option value="2017">2017</option>
+                                  <option value="2018">2018</option>
+                                  <option value="2019">2019</option>
+                                  <option value="2020">2020</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- /Payment Info section -->
+
+                    <hr>
+
+                    <button type="submit" class="btn btn-primary btn-lg mt-2">Register</button>
+
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+
+
+
+
+
+
             </div>
         </div>
     </div>
